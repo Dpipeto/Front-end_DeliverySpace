@@ -1,0 +1,59 @@
+.navbar {
+    position: fixed;          /* Fija la barra en la parte superior */
+    top: 0;                   /* Posición en la parte superior */
+    left: 0;                  /* Alineada al borde izquierdo */
+    right: 0;                 /* Alineada al borde derecho */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #b0b0b0; /* Color de fondo similar al de la imagen */
+    z-index: 1000;             /* Asegura que esté encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para mayor visibilidad */
+  }
+  
+  .dropdown-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dropdown {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .tracking-button {
+    padding: 8px 12px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    color: #333;
+    cursor: pointer;
+    
+  }
+  
+  .auth-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .login-button {
+    padding: 8px 12px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .search-button {
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  

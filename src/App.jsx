@@ -6,16 +6,19 @@ import Register from './Pages/Login/Register';
 import Orders from './Pages/orders';
 import Principal from './Pages/Principal';
 
+
 function App() {
+
+  //const [user, setUser] = useState(null)
     
   return (
       <div>
-        <Routes>
-          <Route path='/' element={ <Login/>}/>
-          <Route path='/Register' element={ <Register/>}/>
-          <Route path='/Orders' element={ <Orders/>}/>
-          <Route path='/Principal' element={ <Principal/>}/>
-        </Routes>
+          <Routes>
+            <Route path='/Login' element={ <Login/>}/>
+            <Route path='/Register' element={ <Register/>}/>
+            <Route path='/Orders' element={ <Orders/>}/>
+            <Route path='/' element={ <Principal/>}/>
+          </Routes>
       </div>
   )
 }

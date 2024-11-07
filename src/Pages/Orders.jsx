@@ -30,7 +30,6 @@ const Orders = () => {
 
     const handlerOnChange = (e) => {
         setDataForm({...dataForm, [e.target.name]:e.target.value})
-        console.log(response);
     }
     return (
         <div className='wrapper'>
@@ -43,7 +42,7 @@ const Orders = () => {
                     <input name="packageSender" onChange={handlerOnChange} type="text" placeholder='Package sender' required/>
                 </div>
                 <div className="input-box">
-                    <input name="packageRecieve" onChange={handlerOnChange} type="text" placeholder='package recieve' required/>
+                    <input name="packageReceive" onChange={handlerOnChange} type="text" placeholder='package recieve' required/>
                 </div>
                 <div className="input-box">
                     <input name="orderValue" onChange={handlerOnChange} type="number" placeholder='Order Value' required/>

@@ -25,7 +25,7 @@ const Login = () => {
             console.log(response.data.message);
             setMessage({text: response.data.message, variant:"success"})
             setTimeout(() => {
-                navigate("/Orders");
+                navigate("/");
             },2000);
             
         } catch (error) {
