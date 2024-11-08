@@ -24,14 +24,22 @@ const Principal = () => {
                     <button className="login-button" type="submit"><Link to='/Register'>Register</Link></button>
                 </div>
             </div>
-                <div>
-                    <h2>Our Company</h2>
-                    <h4>El motivo de esta empresa es dar una ayuda al seguimiento de paqueteria bajo el contexto de la logistica y cadena de suministro</h4>
+                <div className="homeText">
+                    <h2>¡Bienvenidos a nuestra plataforma!</h2>
+                    <p>
+                    Nos dedicamos a ofrecer un servicio completo y eficiente para el seguimiento de sus envíos, optimizando la gestión de órdenes bajo el contexto de la logística y la cadena de suministro.
+                    <br />
+                    Nuestra misión es asegurar que cada paquete llegue a su destino con rapidez, seguridad y visibilidad en tiempo real. Confíe en nosotros para un envío fácil y confiable, adaptado a sus necesidades logísticas.
+                    </p>
+                    <h3><i class='bx bx-package' ></i>Rápida gestión de envíos</h3>
+                    <p>Ofrecemos una plataforma eficiente para gestionar todos tus envíos en tiempo real.</p>
+
+                    <h3><i class='bx bx-map-pin' ></i>Visibilidad completa</h3>
+                    <p>Puedes seguir el estado de tus paquetes en cada etapa del proceso, con notificaciones al instante.</p>
+
+                    <h3> <i class='bx bxs-truck'></i> Servicio confiable</h3>
+                    <p>Nos comprometemos a entregar tus paquetes con seguridad, asegurando que lleguen a su destino sin contratiempos.</p>
                 </div>    
-                <h2>Our Services</h2>
-                <h4></h4>
-                <h4></h4>
-                <h4></h4>
    
         </nav>    
     )

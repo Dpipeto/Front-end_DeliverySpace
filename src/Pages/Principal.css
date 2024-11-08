@@ -1,59 +1,97 @@
 .navbar {
-    position: fixed;          /* Fija la barra en la parte superior */
-    top: 0;                   /* Posición en la parte superior */
-    left: 0;                  /* Alineada al borde izquierdo */
-    right: 0;                 /* Alineada al borde derecho */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #b0b0b0; /* Color de fondo similar al de la imagen */
-    z-index: 1000;             /* Asegura que esté encima de otros elementos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para mayor visibilidad */
-  }
+  position: fixed;          /* Fija la barra en la parte superior */
+  top: 0;                   /* Posición en la parte superior */
+  left: 0;                  /* Alineada al borde izquierdo */
+  right: 0;                 /* Alineada al borde derecho */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #000000b9; /* Color de fondo similar al de la imagen */
+  z-index: 1000;             /* Asegura que esté encima de otros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para mayor visibilidad */
+}
+
+.dropdown-container {
+  display: flex;
+  gap: 10px;
+}
+
+.dropdown {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.tracking-button {
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: #000000b9;
+  border: none;
+  border-radius: 40px;
+  color: #ffffff;
+  cursor: pointer;
   
-  .dropdown-container {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .dropdown {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    cursor: pointer;
-  }
-  
-  .tracking-button {
-    padding: 8px 12px;
-    background-color: #fff;
-    border: none;
-    border-radius: 40px;
-    color: #333;
-    cursor: pointer;
-    
-  }
-  
-  .auth-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .login-button {
-    padding: 8px 12px;
-    background-color: #fff;
-    border: none;
-    border-radius: 40px;
-    color: #333;
-    cursor: pointer;
-    font-weight: 700;
-  }
-  
-  .search-button {
-    font-size: 18px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
+}
+
+.auth-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-button {
+  text-decoration: none; 
+  padding: 10px 20px;
+  background-color: #000000b9; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.search-button {
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.homeText {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Usa el color del texto heredado */
+  padding: 10px 20px;
+  background-color: #000000a1; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none;
+  border-radius: 5px;
+  display: block; /* Cambié a block para que se ajuste al contenedor */
+  text-align: left; /* Alinea el texto a la izquierda */
+  backdrop-filter: blur(10px);
+  margin-left: 20px; /* Ajusta el margen izquierdo para que no esté pegado a la orilla */
+  max-width: 700px; /* Establece un ancho máximo */
+}
+
+.homeText h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.homeText p {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.homeText h3 {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.homeText h3 i {
+  font-size: 50px; /* Tamaño del ícono */
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+  color: #f1f1f1;  /* Color del ícono (asegurarse de que sea visible) */
+}
