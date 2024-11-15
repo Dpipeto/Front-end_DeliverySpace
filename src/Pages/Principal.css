@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #000000b9; /* Color de fondo similar al de la imagen */
+  background-color: #3A908D; /* Color de fondo similar al de la imagen */
   z-index: 1000;             /* Asegura que esté encima de otros elementos */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para mayor visibilidad */
 }
@@ -27,12 +27,12 @@
 .tracking-button {
   text-decoration: none;
   padding: 8px 12px;
-  background-color: #000000b9;
+  background-color: #ffffff;
   border: none;
   border-radius: 40px;
-  color: #ffffff;
+  color: black;
   cursor: pointer;
-  
+  font-weight: 500;
 }
 
 .auth-container {
@@ -44,12 +44,13 @@
 .login-button {
   text-decoration: none; 
   padding: 10px 20px;
-  background-color: #000000b9; 
-  color: white; 
+  background-color: #fff; 
+  color: black; 
   border: none;
-  border-radius: 5px;
+  border-radius: 40px;
   display: inline-block;
   text-align: center;
+  font-weight: 500;
 }
 
 

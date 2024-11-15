@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 const Register = () => {
 
     const [userType, setUserType] = useState([])
+    const [passwordFeedback, setPasswordFeedback] = useState("");
     const [dataForm, setDataForm]  = useState({
         first_Name:"",
         last_Name:"",
@@ -54,6 +55,33 @@ const Register = () => {
     const handlerOnChange = (e) => {
         setDataForm({...dataForm, [e.target.name]:e.target.value})
         console.log(dataForm);
+
+        if (e.target.name === "password") {
+            validatePassword(e.target.value)
+        }
+    }
+
+    const validatePassword = password => {
+        const minLength = password.length >= 8;
+        const hasUppercase = /[A-Z]/.test(password);
+        const hasNumber = /\d/.test(password);
+        const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+        if (!minLength) {
+            setPasswordFeedback("La contraseña debe tener al menos 8 caracteres.");
+            return (false);
+        } else if (!hasUppercase) {
+            setPasswordFeedback("La contraseña debe incluir al menos una letra mayúscula.");
+            return (false);
+        } else if (!hasNumber) {
+            setPasswordFeedback("La contraseña debe incluir al menos un número.");
+            return (false);
+        } else if (!hasSpecialChar) {
+            setPasswordFeedback("La contraseña debe incluir al menos un caracter especial.");
+        } else {
+            setPasswordFeedback("");
+            return (true);
+        }
     }
     return (
         <div className='wrapper'>
@@ -78,6 +106,7 @@ const Register = () => {
                 <div className="input-box">
                     <FaLock className='icon' />
                     <input name="password" onChange={handlerOnChange} type="password" placeholder='Password' required/>
+                    {passwordFeedback && passwordFeedback}
                 </div>
                 <div className="input-box">
                     <FaHouse className='icon' />
