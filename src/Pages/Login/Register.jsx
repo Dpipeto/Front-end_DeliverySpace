@@ -81,7 +81,6 @@ const Register = () => {
             return (true);
         }
     }
-    };
 
     const handlePolicyCheckbox = (e) => {
         setIsPolicyAccepted(e.target.checked);
@@ -112,8 +111,6 @@ const Register = () => {
 
                     <input name="password" onChange={handlerOnChange} type="password" placeholder='Password' required/>
                     {passwordFeedback && passwordFeedback}
-
-                    <input name="password" onChange={handlerOnChange} type="password" placeholder='Password' required />
                 </div>
                 <div className="input-box">
                     <FaHouse className='icon' />
@@ -148,11 +145,12 @@ const Register = () => {
                 <button type="submit" disabled={!isPolicyAccepted}>Register</button>
 
                 <div className="register-link">
-                    <p>¿Ya tienes una cuenta? <Link to='/'>Iniciar sesión</Link></p>
+                    <p>¿Ya tienes una cuenta? <Link to='/Login'>Iniciar sesión</Link></p>
                 </div>
             </form>
         </div>
     );
+}
 
 
 export default Register;
