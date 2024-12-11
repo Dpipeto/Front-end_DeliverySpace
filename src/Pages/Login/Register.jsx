@@ -3,9 +3,12 @@ import axiosClient from "../../Config/axios";
 import { FaUser, FaLock, FaPhone, FaAddressCard } from "react-icons/fa";
 import { MdEmail, MdDateRange } from "react-icons/md";
 import { FaHouse } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
+
 
 const Register = () => {
+    const navigate = useNavigate()
+    const [message, setMessage] = useState({})
     const [userType, setUserType] = useState([]);
     const [isPolicyAccepted, setIsPolicyAccepted] = useState(false);
     const [passwordFeedback, setPasswordFeedback] = useState("");
@@ -43,7 +46,11 @@ const Register = () => {
         try {
             const dataUrl = new URLSearchParams(dataForm).toString();
             const response = await axiosClient.post(`/User?${dataUrl}`);
-            console.log(response);
+            console.log(response.data.message);
+            setMessage({text: response.data.message, variant:"success"})
+            setTimeout(() => {
+                navigate("/");
+            },2000);
         } catch (error) {
             console.log(error)
         }
