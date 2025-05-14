@@ -1,6 +1,7 @@
 import React from "react";
 import Login from './Login/Login'
 import './Principal.css'
+import Rastreo from './Rastreo/Rastreo'
 import { Link, useNavigate } from "react-router-dom";
 
 const Principal = () => {
@@ -16,7 +17,7 @@ const Principal = () => {
         <nav>
             <div className="navbar">
                 <div className="dropdown-container">
-                    <button className="tracking-button" type="submit">Tracking</button>
+                    <button className="tracking-button" type="submit"><Link to='/Rastreo'>Tracking</Link></button>
                     <button className="tracking-button" type="submit">Account</button>
                 </div>
                 <div onSubmit={handlerFormSubmit} className="auth-container">
@@ -36,7 +37,6 @@ const Principal = () => {
 
                     <h3><i class='bx bx-map-pin' ></i>Visibilidad completa</h3>
                     <p>Puedes seguir el estado de tus paquetes en cada etapa del proceso, con notificaciones al instante.</p>
-
                     <h3> <i class='bx bxs-truck'></i> Servicio confiable</h3>
                     <p>Nos comprometemos a entregar tus paquetes con seguridad, asegurando que lleguen a su destino sin contratiempos.</p>
                 </div>    

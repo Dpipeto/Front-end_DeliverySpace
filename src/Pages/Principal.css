@@ -71,6 +71,7 @@
   border-radius: 5px;
   display: block; /* Cambié a block para que se ajuste al contenedor */
   text-align: left; /* Alinea el texto a la izquierda */
+  -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
   backdrop-filter: blur(10px);
   margin-left: 20px; /* Ajusta el margen izquierdo para que no esté pegado a la orilla */
   max-width: 700px; /* Establece un ancho máximo */

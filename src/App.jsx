@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register';
+import Rastreo from './Pages/Rastreo/Rastreo';
 import Orders from './Pages/orders';
 import Principal from './Pages/Principal';
 import RecoverPassword from './Pages/Login/RecoverPassword';
@@ -15,6 +16,7 @@ function App() {
   return (
       <div>
           <Routes>
+            <Route path='/Rastreo' element={ <Rastreo/>}/>
             <Route path='/Login' element={ <Login/>}/>
             <Route path='/Register' element={ <Register/>}/>
             <Route path='/Orders' element={ <Orders/>}/>
